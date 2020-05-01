@@ -1,6 +1,7 @@
 # Temporal network community detection
 Community detection in temporal networks using multi-layer technique
 
+
 In this method the temporal graph is divied into layers according to their time stamps.
 The timeline is divided into time steps that form a network layer of a period of time.
 
@@ -21,3 +22,27 @@ After partial transfer of edges between layers multi-layer community detection i
 |3.|   Eu-Core-D2          |   0.623362           |   0.038455           | 0.163557    |
 |4.|   Eu-Core-D3          |   0.450960           |   0.073655          |  0.100457    |
 |5.|   Eu-Core-D4          |   0.638279           |   0.035874           | 0.171590    |
+
+**Running the code:**
+
+Creating e-graph for temporal network: 
+```
+python getGraph.py dataset_name
+
+```
+
+Creating e-graph for temporal network: 
+```
+python getGraph.py dataset_name
+
+```
+Getting communities from e-graph:
+```
+python run.py dataset_name
+
+```
+Evalutation of communities:
+```
+python evaluation.py dataset_name
+
+```

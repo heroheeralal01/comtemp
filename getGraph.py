@@ -1,7 +1,8 @@
 import networkx as nx
 import pickle as pk
+import sys
 
-dataset = "eu-core"
+dataset = sys.argv[1]
 file = open("./datasets/{}.txt".format(dataset),"r")
 
 graph = nx.Graph()
@@ -26,7 +27,7 @@ for i in range(len(layers)):
         else:
             graph.add_edge(*j,weight = {i:1})
 
-print (graph.number_of_nodes())
+# print (graph.number_of_nodes())
 
 graph_copy = graph
 
@@ -61,3 +62,4 @@ for j in edge_list:
     # print (graph.get_edge_data(*j))
 
 pk.dump(graph, open("./datasets/egraphs/{}.p".format(dataset),"wb"))
+print ("Created e-graph.")

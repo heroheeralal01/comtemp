@@ -12,16 +12,6 @@ Since a node can be a member of communities of other time-step layers than the t
   <img src="./images/layerdiagram.jpg?raw=true" alt="Fig. Depicting partial transfer of edges between layers."/>
 </p>
 
-After partial transfer of edges between layers multi-layer community detection is applied and properties of detected communities are measured, results provided in the table below.
-
-
-|Sno. |  Datasets     |        Clustering Coeff.      |     Unifiability    |     Isoability         |
-|-----|-----------------------|-----------------------|-----------------------|:---------------------:|
-|1.|   Eu-Core             |     0.322403        |   0.005003           |  0.035551    |
-|2.|   Eu-Core-D1          |   0.452008           |   0.012224           | 0.112353    |
-|3.|   Eu-Core-D2          |   0.623362           |   0.038455           | 0.163557    |
-|4.|   Eu-Core-D3          |   0.450960           |   0.073655          |  0.100457    |
-|5.|   Eu-Core-D4          |   0.638279           |   0.035874           | 0.171590    |
 
 **Running the code:**
 
@@ -46,3 +36,15 @@ Evalutation of communities:
 python evaluation.py dataset_name
 
 ```
+
+
+After partial transfer of edges between layers multi-layer community detection is applied and properties of detected communities are measured, results provided in the table below.
+
+
+|Sno. |  Datasets     |        Clustering Coeff.      |     Unifiability    |     Isoability         |
+|-----|-----------------------|-----------------------|-----------------------|:---------------------:|
+|1.|   Eu-Core             |     0.322403        |   0.005003           |  0.035551    |
+|2.|   Eu-Core-D1          |   0.452008           |   0.012224           | 0.112353    |
+|3.|   Eu-Core-D2          |   0.623362           |   0.038455           | 0.163557    |
+|4.|   Eu-Core-D3          |   0.450960           |   0.073655          |  0.100457    |
+|5.|   Eu-Core-D4          |   0.638279           |   0.035874           | 0.171590    |

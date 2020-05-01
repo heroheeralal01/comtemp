@@ -7,4 +7,6 @@ The timeline is divided into time steps that form a network layer of a period of
 
 Since a node can be a member of communities of other time-step layers than the time-step which is assigned to it, to solve this a edge's existance in one layer is partially transfered to the layer of previous time-step (if it exists) and to the layer of next time-step (if it exists). 
 
-<div style="text-align:center"><img src="./images/layerdiagram.jpg" /></div>
+<p align="center">
+  <img src="./images/layerdiagram.jpg?raw=true" alt="Fig. Depicting partial transfer of edges between layers."/>
+</p>
